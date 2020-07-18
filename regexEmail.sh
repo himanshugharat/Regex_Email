@@ -39,3 +39,12 @@ then
 else
 	echo "Phone Number Is Not Valid";
 fi
+echo "Enter the Password:";
+read PASSWORD;
+PAT4="[0-9a-zA-Z]{8,}$";
+if [[ $PASSWORD =~ $PAT4 ]]
+then
+	echo "Password Is Valid";
+else
+	echo "Password Is Not Valid";
+fi
