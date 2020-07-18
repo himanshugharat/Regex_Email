@@ -41,7 +41,7 @@ else
 fi
 echo "Enter the Password:";
 read PASSWORD;
-PAT4="(^[a-zA-Z][!^@#$&][0-9])([A-Z])([!@#$&^])";
+PAT4="((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[.$#@!,]))[a-zA-Z0-9./!@#$%]{8}";
 if [[ $PASSWORD =~ $PAT4 ]]
 then
 	echo "Password Is Valid";
