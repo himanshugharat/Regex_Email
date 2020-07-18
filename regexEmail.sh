@@ -29,3 +29,13 @@ then
 else
         echo "Email Is Not Valid";
 fi
+echo "Enter The Phone Number:"
+read PNUMBER;
+PAT3="^[1-9]{2} [ ]?[0-9]{10}$";
+
+if [[ $PNUMBER =~ $PAT3 ]]
+then
+	echo "Phone Number Is Valid";
+else
+	echo "Phone Number Is Not Valid";
+fi
