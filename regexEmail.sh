@@ -31,7 +31,7 @@ else
 fi
 echo "Enter The Phone Number:"
 read PNUMBER;
-PAT3="^[1-9]{2} [ ]?[0-9]{10}$";
+PAT3="(^[a-zA-Z][!^@#$&][0-9])([A-Z])([!@#$&^])";
 
 if [[ $PNUMBER =~ $PAT3 ]]
 then
